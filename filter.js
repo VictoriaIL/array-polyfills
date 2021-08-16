@@ -10,7 +10,7 @@ function myFilter(array, callback, context) {
 
 
 arr = [1, 2, 3, 4, 5];
-filter = myFilter(arr, function(item, index, array){
+let filter = myFilter(arr, function(item){
         return item < 3;
 });
 
