@@ -8,6 +8,7 @@ function myMap(array, callback, context) {
 
 arr = [1, 2, 3, 4, 5];
 
-console.log(myMap(arr, function(item){
+myMap(arr, function(item){
     return item += 1;
-}))
+})
+
