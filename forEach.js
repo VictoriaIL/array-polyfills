@@ -8,7 +8,7 @@ function myForEach(array, callback, context) {
 arr = [1, 2, 3, 4, 5]
 myForEach(arr, (  item, index, array) => {
     console.log(array)
-   console.log('item: ' + item + ' index: ' + index + ' array: ' + array)
+    console.log('item: ' + item + ' index: ' + index + ' array: ' + array)
 });
 
 
