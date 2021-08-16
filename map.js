@@ -1,13 +1,13 @@
 function myMap(array, callback, context) {
     let resultArray = [];
     for (let i = 0; i < array.length; i++) {
-        resultArray.push(callback.call(this.arr, array[i], i, array));
+        resultArray.push(callback.call(context, array[i], i, array));
     }
     return resultArray;
 }
 
 arr = [1, 2, 3, 4, 5];
 
-console.log(myMap(arr, function(item, index, array){
+console.log(myMap(arr, function(item){
     return item += 1;
-}.bind(arr)))
+}))
